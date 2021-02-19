@@ -20,7 +20,7 @@ import requests
 
 # ------ Place code below here \/ \/ \/ ------
 # import plotly library and enter credential info here
-
+import plotly as 
 
 # ------ Place code above here /\ /\ /\ ------
 
@@ -37,7 +37,7 @@ def exercise01():
     '''
 
     # ------ Place code below here \/ \/ \/ ------
- 
+    df = pd.DataFrame(
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -47,7 +47,7 @@ def exercise02(a):
     # The function exercise02() receives a Python list and converts it to an ndarray. Convert the list to a numpy ndarray called array.
 
     # ------ Place code below here \/ \/ \/ ------
-
+    array = 
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -57,7 +57,7 @@ def exercise03(a):
     # The function exercise03() receives an ndarray of integers. Return the sum of those integers using NumPy.
 
     # ------ Place code below here \/ \/ \/ ------
-
+    sum = 
 
     # ------ Place code above here /\ /\ /\ ------
     return sum
@@ -66,7 +66,7 @@ def exercise04(a):
     # The function exercise04() receives an ndarray matrix (2D) of integers. Return the sum of the 2nd column using NumPy.
 
     # ------ Place code below here \/ \/ \/ ------
-
+    sum = 
 
     # ------ Place code above here /\ /\ /\ ------
     return sum
