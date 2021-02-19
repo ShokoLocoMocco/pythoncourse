@@ -27,7 +27,7 @@ def exercise01():
     # Create a list called animals containing the following animals: cat, dog, crouching tiger, hidden dragon, manta ray
 
     # ------ Place code below here \/ \/ \/ ------
-
+    animals = ['cat', 'dog', 'crouching tiger', 'hidden dragon', 'manta ray']
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -38,7 +38,8 @@ def exercise02():
     # Repeat exercise 1 and loop through and print each item in the animal list by iterating through an index number and using range(). Set the variable len_animals to the length of the animal list.
 
     # ------ Place code below here \/ \/ \/ ------
-
+    animals = ['cat', 'dog', 'crouching tiger', 'hidden dragon', 'manta ray']
+    len_animals = len(animals)
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -54,8 +55,8 @@ def exercise03():
     the_fifth_element = -999
 
     # ------ Place code below here \/ \/ \/ ------
-
-
+    countdown = sorted(countdown)
+    the_fifth_element = countdown[4]
     # ------ Place code above here /\ /\ /\ ------
 
     return countdown, the_fifth_element
@@ -77,7 +78,7 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
     copy_of_samples = []
 
     # ------ Place code below here \/ \/ \/ ------
-
+    more_temperatures = 
 
 
     # ------ Place code above here /\ /\ /\ ------
