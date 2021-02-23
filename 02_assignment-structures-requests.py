@@ -78,7 +78,13 @@ def exercise04(more_temperatures, iot_sensor_points, a, b, c, d, e):
     copy_of_samples = []
 
     # ------ Place code below here \/ \/ \/ ------
-    more_temperatures = 
+    temperatures = list(temperatures + more_temperatures)
+    temperatures = 
+    
+    temperatures = sorted(temperatures, reverse = True)
+    samples = temperatures[6, -1]
+    copy_of_samples = list(samples)
+    samples = sorted(samples)
 
 
     # ------ Place code above here /\ /\ /\ ------
@@ -91,6 +97,9 @@ def exercise05(n):
 
     # ------ Place code below here \/ \/ \/ ------
 
+    for x in n:
+        
+        
     pass # Remove this line
 
     # ------ Place code above here /\ /\ /\ ------
@@ -110,7 +119,7 @@ def exercise07(n):
     # This function looks for duplicates in list n. If there is a duplicate True is returned. If there are no duplicates False is returned.
 
     # ------ Place code below here \/ \/ \/ ------
-
+    for 
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -119,7 +128,8 @@ def exercise07(n):
 
 def exercise08(s):
     # This function receives a string. The string should be casted to an int and then a float and returns each separately
-
+    int_s = 
+    float_s = 
     return int_s, float_s
 
 # ------ Place code above here /\ /\ /\ ------
@@ -146,7 +156,7 @@ def exercise10(sentence):
     reversed = ''
 
     # ------ Place code below here \/ \/ \/ ------
-    
+    reversed = 
 
 
     # ------ Place code above here /\ /\ /\ ------
