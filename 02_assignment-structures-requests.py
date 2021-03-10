@@ -97,10 +97,17 @@ def exercise05(n):
 
     # ------ Place code below here \/ \/ \/ ------
 
-    for x in n:
-        
-        
-    pass # Remove this line
+    if n < 0:
+        return False
+    
+    elif n == 0:
+        return 1
+    
+    
+    else:
+        fac = factorial(n-1)
+        result = n * fac
+        return result
 
     # ------ Place code above here /\ /\ /\ ------
 
