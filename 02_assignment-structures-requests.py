@@ -114,7 +114,7 @@ def exercise05(n):
     
     
     else:
-        fac = factorial(n-1)
+        fac = exercise05(n-1)
         result = n * fac
         return result
 
@@ -125,7 +125,9 @@ def exercise06(n):
      # This function will receive an arbitrary list of numbers of arbitrary size and find the average of those numbers. The size of the list may vary. Find the method that requires the  least amount of code. Return back the length, sum of list and average of list
 
     # ------ Place code below here \/ \/ \/ ------
-
+    length_n = len(n)
+    sum_n = sum(n)
+    average_n = sum_n / length_n  
 
     # ------ Place code above here /\ /\ /\ ------
     return length_n, sum_n, average_n
@@ -135,7 +137,7 @@ def exercise07(n):
     # This function looks for duplicates in list n. If there is a duplicate True is returned. If there are no duplicates False is returned.
 
     # ------ Place code below here \/ \/ \/ ------
-    for 
+    return len(set(n)) < len(n)
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -144,8 +146,8 @@ def exercise07(n):
 
 def exercise08(s):
     # This function receives a string. The string should be casted to an int and then a float and returns each separately
-    int_s = 
-    float_s = 
+    int_s = int(s)
+    float_s = float(s)
     return int_s, float_s
 
 # ------ Place code above here /\ /\ /\ ------
