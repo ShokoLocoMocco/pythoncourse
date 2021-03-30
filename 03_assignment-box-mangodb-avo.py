@@ -147,7 +147,17 @@ def exercise03():
 
     # ------ Place code below here \/ \/ \/ ------
 
+    CSV_URL = "https://raw.githubusercontent.com/ShokoLocoMocco/pythoncourse/master/avocado.csv"
 
+    with requests.Session() as s:
+        download = s.get(CSV_URL)
+
+        decoded_content = download.content.decode('utf-8')
+
+        reader = csv.reader(decoded_content.splitlines(), delimiter=',')
+        my_list = list(reader)
+        for row in my_list:
+            print(row)
     # ------ Place code above here /\ /\ /\ ------
 
 class TestAssignment3(unittest.TestCase):
