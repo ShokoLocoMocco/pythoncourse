@@ -37,7 +37,9 @@ def exercise01():
     '''
 
     # ------ Place code below here \/ \/ \/ ------
-    df = pd.DataFrame(
+     """df = pd.DataFrame({'0':[1,5,7], '1':[2,6,8], '2':[3,7,9], '3':[4,8,10]})"""
+        
+            
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -47,7 +49,7 @@ def exercise02(a):
     # The function exercise02() receives a Python list and converts it to an ndarray. Convert the list to a numpy ndarray called array.
 
     # ------ Place code below here \/ \/ \/ ------
-    array = 
+    array = np.array(a)
 
     # ------ Place code above here /\ /\ /\ ------
 
@@ -57,8 +59,8 @@ def exercise03(a):
     # The function exercise03() receives an ndarray of integers. Return the sum of those integers using NumPy.
 
     # ------ Place code below here \/ \/ \/ ------
-    sum = 
-
+    sum= int(np.sum(a))
+    
     # ------ Place code above here /\ /\ /\ ------
     return sum
 
@@ -66,7 +68,7 @@ def exercise04(a):
     # The function exercise04() receives an ndarray matrix (2D) of integers. Return the sum of the 2nd column using NumPy.
 
     # ------ Place code below here \/ \/ \/ ------
-    sum = 
+    sum = int(np.sum(a[:, [1]]))
 
     # ------ Place code above here /\ /\ /\ ------
     return sum
@@ -75,7 +77,7 @@ def exercise05(n):
     # The function exercise05() receives an integer n. Return an ndarray filled with zeros of size n x n (n rows, n columns)
 
     # ------ Place code below here \/ \/ \/ ------
-
+    zeros = np.zeros((n, n))
 
     # ------ Place code above here /\ /\ /\ ------
     return zeros
@@ -84,7 +86,7 @@ def exercise06(n):
     # The function exercise06() receives an integer n. Return an ndarray filled with ones of size n x n (n rows, n columns)
 
     # ------ Place code below here \/ \/ \/ ------
-
+    ones = np.zeros((n, n))+1
 
 
     # ------ Place code above here /\ /\ /\ ------
@@ -95,7 +97,7 @@ def exercise07(sd,m,s):
     # Return an ndarray filled with s random numbers conforming to a normal distribution of standard deviation = sd and mean = m
 
     # ------ Place code below here \/ \/ \/ ------
-
+    random_numbers = 
 
     # ------ Place code above here /\ /\ /\ ------
     return random_numbers
@@ -111,7 +113,12 @@ def exercise08():
     '''
 
     # ------ Place code below here \/ \/ \/ ------
+    df = pd.read_csv("https://raw.githubusercontent.com/JuliaData/CSV.jl/master/test/testfiles/Sacramentorealestatetransactions.csv")
 
+    row_count = len(df)
+    avg_sq_ft = df['sq__ft'].mean()
+    df_zip_95670 = df.query('zip == 95670')
+    df_zip_not_95610 = df.query('zip != 95670')
 
     # ------ Place code above here /\ /\ /\ ------
 
